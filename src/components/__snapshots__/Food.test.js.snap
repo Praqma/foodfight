@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the name 1`] = `
+<p>
+  Potato
+</p>
+`;

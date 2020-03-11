@@ -1,0 +1,1 @@
+export const getFoodstuff = store => store.allFood;

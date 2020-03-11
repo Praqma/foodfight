@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the list 1`] = `
+<ul>
+  You need a more varied diet!
+</ul>
+`;

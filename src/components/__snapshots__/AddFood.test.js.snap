@@ -1,27 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`has a add button 1`] = `
-<button
-  className="MuiButtonBase-root MuiButton-root MuiButton-contained"
-  disabled={false}
-  onBlur={[Function]}
-  onDragLeave={[Function]}
-  onFocus={[Function]}
-  onKeyDown={[Function]}
-  onKeyUp={[Function]}
-  onMouseDown={[Function]}
-  onMouseLeave={[Function]}
-  onMouseUp={[Function]}
-  onTouchEnd={[Function]}
-  onTouchMove={[Function]}
-  onTouchStart={[Function]}
-  tabIndex={0}
-  type="button"
+exports[`has a form 1`] = `
+<form
+  onSubmit={[Function]}
 >
-  <span
-    className="MuiButton-label"
-  >
-    Add
-  </span>
-</button>
+  <label>
+    Food to add:
+    <input
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+  </label>
+  <input
+    type="submit"
+    value="Submit"
+  />
+</form>
 `;
