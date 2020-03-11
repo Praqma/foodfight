@@ -8,9 +8,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>My food</h1>
-        <FoodList></FoodList>
+        <FoodList/>
         <AddFood/>
-
       </header>
     </div>
   );

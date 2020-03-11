@@ -1,7 +1,7 @@
 import { ADD_FOOD } from "../actionTypes";
 
 const initialState = {
-  allFood: []
+   allFood: []
 };
 
 export default function(state = initialState, action) {
@@ -10,8 +10,8 @@ export default function(state = initialState, action) {
       const { name } = action.payload;
       return {
         ...state,
-        allFood: [...state.allFood, name]
-      };
+          allFood: [...state.allFood, name]        
+      };  
     }
     default:
       return state;

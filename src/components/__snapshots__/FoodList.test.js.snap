@@ -5,3 +5,18 @@ exports[`renders the list 1`] = `
   You need a more varied diet!
 </ul>
 `;
+
+exports[`renders the list with items 1`] = `
+<ul>
+  <li>
+    <p>
+      apple
+    </p>
+  </li>
+  <li>
+    <p>
+      potato
+    </p>
+  </li>
+</ul>
+`;
