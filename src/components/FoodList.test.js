@@ -3,9 +3,9 @@ import FoodList, {mapStateToProps} from './FoodList';
 import renderer from 'react-test-renderer';
 import { Provider } from 'react-redux'
 import configureStore from 'redux-mock-store';
-const mockStore = configureStore([]);
 import { addFood } from '../redux/actions'
 import foodstuff from '../redux/reducers/foodstuff';
+const mockStore = configureStore([]);
 
 test('renders the list', () => {
     let store = mockStore({foodstuff:{allFood: []}});    
