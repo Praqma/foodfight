@@ -12,20 +12,20 @@ export class AddFood extends React.Component {
         this.setState({name});
       };
     
-      handleAddFood = () => {
+      handleAddFood = (event) => {
         this.props.addFood({name:this.state.name});
+        event.preventDefault();
         this.setState({ name: "" });
       };
     
     render(){
         return(
-        <div>
+        <form onSubmit={this.handleAddFood}>
         <label>Food to add:
           <input type="text" value={this.state.name} onChange={e => this.updateName(e.target.value)}/>
         </label>
-        <button className="add-food" onClick={this.handleAddFood}>
-          Add Food</button>      
-        </div>
+        <input type="submit" value="Add food" />
+        </form>
         )
     }
 

@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`AddFood has a form 1`] = `
-<div>
+<form
+  onSubmit={[Function]}
+>
   <label>
     Food to add:
     <input
@@ -10,11 +12,9 @@ exports[`AddFood has a form 1`] = `
       value=""
     />
   </label>
-  <button
-    className="add-food"
-    onClick={[Function]}
-  >
-    Add Food
-  </button>
-</div>
+  <input
+    type="submit"
+    value="Add food"
+  />
+</form>
 `;
