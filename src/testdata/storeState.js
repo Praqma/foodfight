@@ -1,15 +1,15 @@
 import {applePotato} from './allFood'
+import {storage} from './storage'
 export const applePotatoState = {
     foodstuff:{
         allFood: applePotato.allFood
     },
-    storage: [{name:'Counter', id: 1}, {name:'Fridge', id:2}]
+    storage: storage
 }
 
 export const initialState = {
     foodstuff:{
         allFood: []
     },
-    storage: []
-
+    storage: new Map()
 }
