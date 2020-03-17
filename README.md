@@ -1,4 +1,12 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# An example app for React design and testing
+
+This app is a playground for figuring out what works when it comes to writing and testing React code. A practical example for collecting examples on how to make it work. 
+
+Redux is used not as a best practise or a industry standard, but since it is out there and needs to be tested. To rewrite the app using hooks could be a good exercise.
+
+We probably also want a version written with TypeScript to illustrate its benifits in comparision. 
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). 
 
 ## Available Scripts
 
@@ -27,6 +35,10 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+### `npm run --silent lint`
+
+Lints the code using standard. `--silent`is to stop npm from showing the erros resulting in standard not exiting with success. 
+
 ### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
@@ -50,10 +62,6 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/co
 ### Analyzing the Bundle Size
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
 ### Advanced Configuration
 
