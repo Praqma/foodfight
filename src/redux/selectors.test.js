@@ -1,12 +1,10 @@
 import { getAllFood } from './selectors';
+import {applePotatoState} from '../testdata/storeState.js'
+import {applePotato} from '../testdata/allFood.js'
 
 describe('selectors', () => {
 
-  it('allFood gives you all food', ()=>{
-      let state = {foodstuff:{allFood: ['apple','potato']}};
-
-    expect(getAllFood(state)).toEqual({allFood: ['apple','potato']});
+  it('getAllFood gives you all food', ()=>{
+    expect(getAllFood(applePotatoState)).toEqual(applePotato);
   });
-
-  
 });
