@@ -1,6 +1,4 @@
-
 import reducer from './foodstuff';
-import * as types from '../actions';
 import expect from 'expect';
 import { ADD_FOOD } from '../actionTypes';
 

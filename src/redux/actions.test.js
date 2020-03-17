@@ -1,5 +1,4 @@
 import { addFood } from "./actions";
-import { ExpansionPanelActions } from "@material-ui/core";
 import expect from 'expect';
 import { ADD_FOOD } from './actionTypes';
 
