@@ -5,13 +5,16 @@ import { Provider } from 'react-redux'
 import configureStore from 'redux-mock-store';
 const mockStore = configureStore([]);
 
-test('has a form', () => {
-    let store = mockStore({});    
-    const component  = renderer.create(
-        <Provider store={store}>
-            <AddFood/>
-        </Provider>
-    )
-    let tree = component.toJSON()
-    expect(tree).toMatchSnapshot()
+describe('AddFood', () => {
+
+    it('has a form', () => {
+        let store = mockStore({});    
+        const component  = renderer.create(
+            <Provider store={store}>
+                <AddFood/>
+            </Provider>
+        )
+        let tree = component.toJSON()
+        expect(tree).toMatchSnapshot()
+    })
 })  

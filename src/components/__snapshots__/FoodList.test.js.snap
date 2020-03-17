@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders the list 1`] = `
+exports[`FoodList renders the list 1`] = `
 <ul>
   You need a more varied diet!
 </ul>
 `;
 
-exports[`renders the list with items 1`] = `
+exports[`FoodList renders the list with items 1`] = `
 <ul>
   <li>
     <p>

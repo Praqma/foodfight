@@ -5,27 +5,32 @@ import { Provider } from 'react-redux'
 import configureStore from 'redux-mock-store';
 const mockStore = configureStore([]);
 
-test('renders the list', () => {
-    let store = mockStore({foodstuff:{allFood: []}});    
+describe('FoodList', () => {
 
-    const component  = renderer.create(
-        <Provider store={store}><FoodList/></Provider>
-    )
-    let tree = component.toJSON()
-    expect(tree).toMatchSnapshot()
-})  
+    it('renders the list', () => {
+        let store = mockStore({foodstuff:{allFood: []}});    
 
-test('renders the list with items', () => {
-    let props = {allFood: ['apple','potato']}
-    let store = mockStore({foodstuff: props});    
-    const component  = renderer.create(
-        <Provider store={store}><FoodList/></Provider>
-    )
-    let tree = component.toJSON()
-    expect(tree).toMatchSnapshot()
-})  
+        const component  = renderer.create(
+            <Provider store={store}><FoodList/></Provider>
+        )
+        let tree = component.toJSON()
+        expect(tree).toMatchSnapshot()
+    })  
 
-test('mapStateToProps', () => {
+    it('renders the list with items', () => {
+        let props = {allFood: ['apple','potato']}
+        let store = mockStore({foodstuff: props});    
+        const component  = renderer.create(
+            <Provider store={store}><FoodList/></Provider>
+        )
+        let tree = component.toJSON()
+        expect(tree).toMatchSnapshot()
+    }); 
+});
+describe('mapStateToProps', () => {
+
+    it('sets allFood', () => {
     let state = {foodstuff:{allFood: ['apple','potato']}};
     expect(mapStateToProps(state)).toEqual({allFood: ['apple','potato']});
+    }); 
 }); 

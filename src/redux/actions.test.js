@@ -3,7 +3,7 @@ import expect from 'expect';
 import { ADD_FOOD } from './actionTypes';
 
 describe('addFood', () => {
-    it('creates the coorect action' , ()=>{
+    it('creates the correct action' , ()=>{
     const addAction = {
         type: ADD_FOOD,
         payload: {name:'potato'}
