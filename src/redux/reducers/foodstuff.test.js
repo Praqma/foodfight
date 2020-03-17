@@ -1,17 +1,13 @@
 import reducer from './foodstuff';
 import expect from 'expect';
-import { ADD_FOOD } from '../actionTypes';
-
+import {initial, applePotato, apple} from '../../testdata/allFood'
+import {addPotato} from '../../testdata/actions'
 describe('foodstuff reducer', () => {
   it('should return the initial state', ()=>{
-    expect(reducer(undefined, {})).toEqual({allFood: []});
+    expect(reducer(undefined, {})).toEqual(initial);
   });
 
   it('should handle ADD_FOOD',()=>{
-    const addAction = {
-        type: ADD_FOOD,
-        payload: {name:'potato'}
-      };
-   expect(reducer({allFood: ['apple']}, addAction )).toEqual({allFood: ['apple','potato']});
+   expect(reducer(apple, addPotato)).toEqual(applePotato);
   });
 });
