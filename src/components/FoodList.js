@@ -7,7 +7,7 @@ const FoodList = ({allFood}) => (
         <ul>
             {allFood && allFood.length
             ? allFood.map((food, index) => {
-                return <li key={food}><Food name={food}/></li>
+                return <li key={food.name}><Food name={food.name}/></li>
             })
         : "You need a more varied diet!"}
         </ul>

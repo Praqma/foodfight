@@ -1,5 +1,8 @@
+import {potato} from './food'
+import {apple as apple_item} from './food' 
+
 export const applePotato = {
-    allFood: ['apple','potato']
+    allFood: [apple_item, potato]
 }
 
 export const initial = {
@@ -7,5 +10,5 @@ export const initial = {
 }
 
 export const apple = {
-    allFood: ['apple']
+    allFood: [apple_item]
 }

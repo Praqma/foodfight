@@ -7,10 +7,10 @@ const initialState = {
 export default function(state = initialState, action) {
   switch (action.type) {
     case ADD_FOOD: {
-      const { name } = action.payload;
+      const { name, storage_id } = action.payload;
       return {
         ...state,
-          allFood: [...state.allFood, name]        
+          allFood: [...state.allFood, {name: name, storage_id: storage_id}]        
       };  
     }
     default:
